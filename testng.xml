@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true"
+
+          name="/Users/omaisj/Desktop/Useful/NorwegianAirlinesSeleniumcode/NorwegianUserWebpage">
+
+        <classes>
+
+            <class name="tests.loginTest">
+
+                <methods><include name="verifyLoginPageTitle"/>
+
+                    <include name="verifyFontSizeOfLoginPageTitle"/>
+
+                    <include name="verifyLoginPageTitleFontColour"/>
+
+                    <include name="verifyLoginPageTitleFontFamily"/>
+
+                    <include name="verifyLoginPageTitleTextAlignment"/>
+
+                    <include name="verifyPasswordFieldName"/>
+
+                    <include name="verifyPasswordFieldNameFontSize"/>
+
+                    <include name="verifyPasswordFieldNameFontColour"/>
+
+                    <include name="verifyPasswordFieldNameFontFamily"/>
+
+                    <include name="verifyPasswordFieldNameTextAlignment"/>
+
+                    <include name="verifyPasswordFieldIsEnabled"/>
+
+                    <include name="verifyLoginButtonIsDisplayed"/>
+
+                    <include name="verifyLoginButtonName"/>
+
+                    <include name="verifyLogInButtonIsEnabled"/>
+
+                    <include name="verifyLogInButtonFontSize"/>
+
+                    <include name="verifyLogInButtonFontColour"/>
+
+                    <include name="verifyLogInButtonFontFamily"/>
+
+                    <include name="verifyLogInButtonTextAlignment"/>
+
+                    <include name="enterPassword"/>
+
+                </methods>
+
+            </class>
+
+            <class name="tests.testHomePage">
+
+                <methods>
+
+                    <include name="verifyHomePageImageIsShown"/>
+
+                    <include name="verifyHomePageTitle"/>
+
+                    <include name="verifyHowItWorksIsShown"/>
+
+                    <include name="verifyHowItWorksFontSize"/>
+
+                    <include name="verifyHowItWorksFontColour"/>
+
+                    <include name="verifyHowItWorksFontFamily"/>
+
+                    <include name="verifyHowItWorksTextAlignment"/>
+
+                    <include name="verifyOffersIsShown"/>
+
+                    <include name="verifyOffersFontSize"/>
+
+                    <include name="verifyOffersFontColour"/>
+
+                    <include name="verifyOffersFontType"/>
+
+                    <include name="verifyOffersTextAlignment"/>
+
+                    <include name="verifyWhoWeAreIsShown"/>
+
+                    <include name="verifyWhoWeAreFontSize"/>
+
+                    <include name="verifyWhoWeAreFontColour"/>
+
+                    <include name="verifyWhoWeAreFontType"/>
+
+                    <include name="verifyWhoWeAreTextAlignment"/>
+
+                    <include name="verifyPartnersIsShown"/>
+
+                    <include name="verifyPartnersFontSize"/>
+
+                    <include name="verifyPartnersFontColour"/>
+
+                    <include name="verifyPartnersFontType"/>
+
+                    <include name="verifyPartnersTextAlignment"/>
+
+                    <include name="verifyFAQIsShown"/>
+
+                    <include name="verifyFAQFontSize"/>
+
+                    <include name="verifyFAQFontColour"/>
+
+                    <include name="verifyFAQFontType"/>
+
+                    <include name="verifyFAQTextAlignment"/>
+
+                    <include name="verifyEnglishIsSelected"/>
+
+                    <include name="verifyDownloadTheAppTodayButtonIsShown"/>
+
+                    <include name="verifyDownloadTheAppTodayIsShownInYourDigitalWallet"/>
+
+                    <include name="verifyTermsandConditionsFooterLinkIsShown"/>
+
+                    <include name="verifyPrivacyPolicyFooterLinkIsShown"/>
+
+                </methods>
+
+            </class>
+
+            <class name="tests.howItWorksClickedTest">
+
+                <methods>
+
+                    <include name="verifyHowItWorksIsClicked"/>
+
+                </methods>
+
+            </class>
+
+            <class name="tests.offersIsClicked">
+
+                <methods>
+
+                    <include name="verifyOffersIsClicked"/>
+
+                </methods>
+
+            </class>
+
+            <class name="tests.whoWeAreClicked">
+
+                <methods>
+
+                    <include name="verifyWhoWeAreIsClicked"/>
+
+                </methods>
+
+            </class>
+
+            <class name="tests.partnersIsClicked">
+
+                <methods>
+
+                    <include name="verifyPartnersIsClicked"/>
+
+                </methods>
+
+            </class>
+
+            <class name="tests.faqIsClicked">
+
+                <methods>
+
+                    <include name="verifyFAQIsClicked"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>
