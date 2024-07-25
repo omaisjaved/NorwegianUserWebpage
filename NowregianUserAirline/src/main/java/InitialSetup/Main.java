@@ -1,15 +1,20 @@
 package InitialSetup;
 
+import com.gurock.testrail.APIException;
+import com.qa.testrailmanager.TestRailManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +29,8 @@ public class Main {
 
         //Initialising driver in Selenium Webdriver, creating a new session
         public static WebDriver driver;
+
+        public String testCaseId;
 
         /*@BeforeSuite annotated method will be run before the execution of all the test cases defined
         in the folder or inside a TestNG suite.
@@ -133,6 +140,24 @@ public class Main {
             if(driver != null) {
                 driver.quit();
             }
+        }
+
+        @AfterMethod
+    public void addResultsToTestRail(ITestResult result) throws APIException, IOException {
+
+            if (result.getStatus() == ITestResult.SUCCESS) {
+
+                TestRailManager.addResultsForTestCase(testCaseId, TestRailManager.TEST_CASES_PASS_STATUS, "");
+                
+            } else if (result.getStatus() == ITestResult.FAILURE) {
+
+                TestRailManager.addResultsForTestCase(testCaseId, TestRailManager.TEST_CASE_FAIL_STATUS,
+
+                        "Test failed ... " + result.getName() + " : FAILED");
+                
+            }
+
+
         }
 
     }

@@ -25,7 +25,7 @@ public class Homepage extends Main {
 
             //Locator for the Cookies and clicking Allow for Cookies
 
-            By Cookies = By.xpath("//button[1]");
+            By Cookies = By.xpath("//*[@id=\"headlessui-dialog-panel-:r0:\"]/div[2]/button[1]");
 
             //Method to click on Cookies
 

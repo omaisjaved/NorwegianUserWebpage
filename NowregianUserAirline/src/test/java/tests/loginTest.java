@@ -13,6 +13,8 @@ public class loginTest extends LoginPage {
 
     public void verifyLoginPageTitle() {
 
+        testCaseId = "56674";
+
         //Verifying the correct login page title is shown
 
         System.out.println("-------");
