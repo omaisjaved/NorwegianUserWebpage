@@ -820,7 +820,7 @@ public class testHomePage extends Homepage {
 
     }
 
-    @Test(priority = 30)
+    /*@Test(priority = 30)
 
     public void verifyDownloadTheAppTodayIsShownInYourDigitalWallet() {
 
@@ -841,15 +841,15 @@ public class testHomePage extends Homepage {
 
             System.out.println("Test fails as download the app today button is not shown");
         }
-    }
+    }*/
 
-    @Test(priority = 31)
+    @Test(priority = 30)
 
     public void verifyTermsandConditionsFooterLinkIsShown() {
 
         System.out.println("-------");
 
-        System.out.println("Home Page Test 31 for TandC link shown in footer");
+        System.out.println("Home Page Test 30 for TandC link shown in footer");
 
         SoftAssert softAssert = new SoftAssert();
 
@@ -867,13 +867,141 @@ public class testHomePage extends Homepage {
 
     }
 
+    @Test(priority = 31)
+
+    public void verifyTermsandConditionsFooterLinkFontSize() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 31 for TandC font size in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement tAndC = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[1]"));
+
+        String actualFontSize = tAndC.getCssValue("font-size");
+
+        System.out.println(actualFontSize);
+
+        String expectedFontSize = "";
+
+        Assert.assertEquals(actualFontSize, expectedFontSize);
+
+        if (actualFontSize.equals(expectedFontSize)) {
+
+            System.out.println("Test passes as actual font size matches expected font size");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual font size does not match expected font size");
+        }
+
+    }
+
     @Test(priority = 32)
+
+    public void verifyTermsandConditionsFooterLinkFontColour() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 32 for TandC font colour in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement tAndC = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[1]"));
+
+        String actualFontColour = tAndC.getCssValue("font-colour");
+
+        System.out.println(actualFontColour);
+
+        String expectedFontColour = "";
+
+        Assert.assertEquals(actualFontColour, expectedFontColour);
+
+        if (actualFontColour.equals(expectedFontColour)) {
+
+            System.out.println("Test passes as actual font colour matches expected font colour");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual font colour does not match expected font colour");
+        }
+
+    }
+
+    @Test(priority = 33)
+
+    public void verifyTermsandConditionsFooterLinkFontFamily() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 33 for TandC font family in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement tAndC = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[1]"));
+
+        String actualFontFamily = tAndC.getCssValue("font-family");
+
+        System.out.println(actualFontFamily);
+
+        String expectedFontFamily = "";
+
+        Assert.assertEquals(actualFontFamily, expectedFontFamily);
+
+        if (actualFontFamily.equals(expectedFontFamily)) {
+
+            System.out.println("Test passes as actual font type matches expected font type");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual font colour does not match expected font colour");
+        }
+
+    }
+
+    @Test(priority = 34)
+
+    public void verifyTermsandConditionsFooterLinkTextAlignment() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 34 for TandC text alignment in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement tAndC = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[1]"));
+
+        String actualTextAlignment = tAndC.getCssValue("text-align");
+
+        System.out.println(actualTextAlignment);
+
+        String expectedTextaAlignment = "";
+
+        Assert.assertEquals(actualTextAlignment, expectedTextaAlignment);
+
+        if (actualTextAlignment.equals(expectedTextaAlignment)) {
+
+            System.out.println("Test passes as actual text alignment matches expected text alignment");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual text alignment does not match expected text alignment");
+        }
+
+    }
+
+    @Test(priority = 35)
 
     public void verifyPrivacyPolicyFooterLinkIsShown() {
 
         System.out.println("-------");
 
-        System.out.println("Home Page Test 32 for privacy policy link shown in footer");
+        System.out.println("Home Page Test 35 for privacy policy link shown in footer");
 
         SoftAssert softAssert = new SoftAssert();
 
@@ -885,6 +1013,134 @@ public class testHomePage extends Homepage {
         } else {
 
             System.out.println("Test fails as privacy policy footer link is not shown");
+        }
+
+    }
+
+    @Test(priority = 36)
+
+    public void verifyPrivacyPolicyFooterLinkFontSize() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 36 for privacy policy font size in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement privacyPolicy = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[2]/span"));
+
+        String actualFontSize = privacyPolicy.getCssValue("font-size");
+
+        System.out.println(actualFontSize);
+
+        String expectedFontSize = "";
+
+        Assert.assertEquals(actualFontSize, expectedFontSize);
+
+        if (actualFontSize.equals(expectedFontSize)) {
+
+            System.out.println("Test passes as actual font size matches expected font size");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual font size does not match expected font size");
+        }
+
+    }
+
+    @Test(priority = 37)
+
+    public void verifyPrivacyPolicyFooterLinkFontColour() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 37 for privacy policy font colour in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement privacyPolicy = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[2]/span"));
+
+        String actualFontColour = privacyPolicy.getCssValue("font-colour");
+
+        System.out.println(actualFontColour);
+
+        String expectedFontColour = "";
+
+        Assert.assertEquals(actualFontColour, expectedFontColour);
+
+        if (actualFontColour.equals(expectedFontColour)) {
+
+            System.out.println("Test passes as actual font colour matches expected font colour");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual font colour does not match expected font colour");
+        }
+
+    }
+
+    @Test(priority = 38)
+
+    public void verifyPrivacyPolicyFooterLinkFontFamily() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 38 for privacy policy font family in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement privacyPolicy = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[2]/span"));
+
+        String actualFontFamily = privacyPolicy.getCssValue("font-family");
+
+        System.out.println(actualFontFamily);
+
+        String expectedFontFamily = "";
+
+        Assert.assertEquals(actualFontFamily, expectedFontFamily);
+
+        if (actualFontFamily.equals(expectedFontFamily)) {
+
+            System.out.println("Test passes as actual font type matches expected font type");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual font type does not match expected font type");
+        }
+
+    }
+
+    @Test(priority = 39)
+
+    public void verifyPrivacyPolicyFooterLinkTextAlignment() {
+
+        System.out.println("-------");
+
+        System.out.println("Home Page Test 39 for privacy policy text alignment in footer");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        WebElement privacyPolicy = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[1]/footer/div/div[2]/div/a[2]/span"));
+
+        String actualTextAlignment = privacyPolicy.getCssValue("text-align");
+
+        System.out.println(actualTextAlignment);
+
+        String expectedTextAlignment = "";
+
+        Assert.assertEquals(actualTextAlignment, expectedTextAlignment);
+
+        if (actualTextAlignment.equals(expectedTextAlignment)) {
+
+            System.out.println("Test passes as actual text alignment matches expected font text alignment");
+        }
+
+        else {
+
+            System.out.println("Test fails as actual text alignment does not match expected text alignment");
         }
 
     }

@@ -28,6 +28,7 @@ public class whoWeAreClicked extends Homepage {
         WebElement whoWeAre = driver.findElement(By.xpath("//a[3]"));
 
         Actions actions = new Actions(driver);
+
         actions.moveToElement(whoWeAre).click().build().perform();
 
         if (whoWeAre.isSelected()) {

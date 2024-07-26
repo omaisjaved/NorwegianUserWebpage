@@ -119,7 +119,23 @@
 
                     <include name="verifyTermsandConditionsFooterLinkIsShown"/>
 
+                    <include name="verifyTermsandConditionsFooterLinkFontSize"/>
+
+                    <include name="verifyTermsandConditionsFooterLinkFontColour"/>
+
+                    <include name="verifyTermsandConditionsFooterLinkFontFamily"/>
+
+                    <include name="verifyTermsandConditionsFooterLinkTextAlignment"/>
+
                     <include name="verifyPrivacyPolicyFooterLinkIsShown"/>
+
+                    <include name="verifyPrivacyPolicyFooterLinkFontSize"/>
+
+                    <include name="verifyPrivacyPolicyFooterLinkFontColour"/>
+
+                    <include name="verifyPrivacyPolicyFooterLinkFontFamily"/>
+
+                    <include name="verifyPrivacyPolicyFooterLinkTextAlignment"/>
 
                 </methods>
 

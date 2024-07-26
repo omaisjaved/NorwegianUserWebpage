@@ -28,6 +28,7 @@ public class offersIsClicked extends Homepage {
         WebElement offers = driver.findElement(By.xpath("//a[2]"));
 
         Actions actions = new Actions(driver);
+
         actions.moveToElement(offers).click().build().perform();
 
         if (offers.isSelected()) {
